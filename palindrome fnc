@@ -1,0 +1,27 @@
+#include<stdio.h>
+int palindrome(int a)
+{
+    int digit, original, result = 0;
+    original = a;
+    while(a != 0)
+    {
+        digit = a % 10;
+        result = result * 10 + digit;
+        a = a / 10;
+    }
+    if(original == result)
+        return 1;
+    else
+        return 0;
+}
+int main()
+{
+    int x, result;
+    scanf("%d", &x);
+    result = palindrome(x);
+    if(result == 1)
+        printf("PALINDROME");
+    else
+        printf("NOT A PALINDROME");
+    return 0;
+}
