@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+    int rollNo = 101;
+    float marks = 85.5;
+    printf("Roll No: %d\nMarks: %.1f", rollNo, marks);
+    return 0;
+}
