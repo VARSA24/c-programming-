@@ -1,0 +1,19 @@
+#include<stdio.h>
+int fact(int a)
+{
+    int result = 1;
+    for(int i = 1; i <= a; i++)
+    {
+        result = result * i;
+    }
+    return result;
+}
+
+int main()
+{
+    int x, result;
+    scanf("%d", &x);
+    result = fact(x);
+    printf("Factorial of %d is %d", x, result);
+    return 0;
+}
